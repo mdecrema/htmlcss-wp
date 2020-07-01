@@ -19,24 +19,37 @@ body {
 
 header {
     width: calc(100% - 40px);
-    height: 250px;
+    height: 300px;
+    position: relative;
     background-image: url(../img/natural-default-header.jpg);
-    margin: 10px 20px 0px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 20px 0px 20px;
     border: 10px solid #fff;
 }
 
 h1 {
     text-transform: uppercase;
-    border: 2px solid #fff;
+    border: 5px solid #fff;
     text-align: center;
     font-size: 60px;
     color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
 }
 
 h2 {
     text-transform: uppercase;
     text-align: center;
+    font-size: 20px;
     color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 main {
@@ -82,15 +95,40 @@ main::after {
 
 .col-left {
     width: 25%;
-    height: 300px;
     float: left; 
     background-color: #fff;
     border-radius: 5px;
+    padding: 10px;
+}
+
+.rss-symbol {
+    color: orange;
+    font-size: 30px;
+}
+
+.col-left h3 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.col-left ul {
+    margin-top: 20px;
+}
+
+.col-left ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.col-left ul li a {
+    text-decoration: none;
+    color: green;
 }
 
 .col-central {
     width: calc(50% - 40px);
     height: 400px;
+    padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
     float: left;
@@ -98,9 +136,14 @@ main::after {
     border-radius: 5px;
 }
 
+.col-central h3 {
+    text-transform: uppercase;
+    text-shadow: 1px 1px darkgrey;
+}
+
 .col-right {
     width: 25%;
-    height: 420px;
+    height: 650px;
     position: relative;
     float: left;
     background-color: transparent;
@@ -109,6 +152,7 @@ main::after {
 .widget1 {
     width: 100%;
     height: 200px;
+    padding: 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -119,6 +163,7 @@ main::after {
 .widget2 {
     width: 100%;
     height: 200px;
+    padding: 10px;
     position: absolute;
     top: 220px;
     left: 0;
@@ -126,12 +171,42 @@ main::after {
     border-radius: 5px;
 }
 
+.widget3 {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 440px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h3 {
+    color: dimgray;
+}
+
 footer {
     width: calc(100%-40px);
     height: 100px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 20px 0px 20px;
     background-color: #fff;
     border-radius: 5px;
+    text-align: center;
+    color: darkgrey;
+}
+
+#riconoscimenti {
+    font-style: italic;
+}
+
+.riferimenti {
+    width: 100%;
+}
+
+.symbol {
+    font-size: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    line-height: 80px;
 }
