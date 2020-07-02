@@ -82,15 +82,18 @@ main::after {
     list-style: none;
     display: inline-block;
     line-height: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 0px 15px;
     font-size: 10px;
-    color: #fff;
     text-transform: uppercase;
 }
 
 .nav-bar ul li:hover {
     background-color: darkgrey;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .col-left {
